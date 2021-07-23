@@ -1,0 +1,14 @@
+.todo1234 {
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    font-size: 36px;
+  }
+  
+  .todo {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    padding:30px;
+  }

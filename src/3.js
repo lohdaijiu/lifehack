@@ -93,18 +93,21 @@ const styles = (theme) => ({
           'https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg',
         title: 'Jamus',
         width: '33%',
+        href: '/G1',
       },
       {
         url:
           'https://media.istockphoto.com/photos/portrait-young-confident-smart-asian-businessman-look-at-camera-and-picture-id1288538088?k=6&m=1288538088&s=612x612&w=0&h=aDFWrj6SNHvX5RckHp4T40PhvffudKOzfLHhjBU1Qb8=',
         title: 'Jensen',
         width: '33%',
+        href: '/G2',
       },
       {
         url:
           'https://pbs.twimg.com/media/BiqSwkoCQAAdj-R.jpg',
         title: 'May',
         width: '33%',
+        href: '/G3',
       },
     ];
   
@@ -118,6 +121,7 @@ const styles = (theme) => ({
           {images.map((image) => (
             <ButtonBase
               key={image.title}
+              href={image.href}
               className={classes.imageWrapper}
               style={{
                 width: image.width,
