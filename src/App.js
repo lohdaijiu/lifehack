@@ -6,6 +6,7 @@ import ResourcePage from "./Resource"
 import Jamus from "./Jamus1";
 import Jensen from "./Jensen1";
 import May from "./May1";
+import Journaling from "./Journaling";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/G1" component={Jamus} />
       <Route exact path="/G2" component={Jensen} />
       <Route exact path="/G3" component={May} />
+      <Route exact path="/Journal" component={Journaling} />
     </Switch>
     </Router>
   );

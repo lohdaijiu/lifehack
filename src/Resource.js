@@ -19,7 +19,7 @@ const styles = (theme) => ({
   },
 });
 
-function NoChat(props) {
+function Resource(props) {
   const { classes } = props;
 
   return (
@@ -41,8 +41,8 @@ function NoChat(props) {
   );
 }
 
-NoChat.propTypes = {
+Resource.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(NoChat);
+export default withStyles(styles)(Resource);

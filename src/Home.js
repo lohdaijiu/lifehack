@@ -46,14 +46,14 @@ const items = [
     title: 'Group'
   },
   {
-    href: '/Journaling',
+    href: '/Journal',
     icon: CreateIcon,
     title: 'Journaling'
   },
   {
     href: '/4',
     icon: LibraryBooksIcon,
-    title: 'Resource'
+    title: 'Resources'
   },  
 ];
 
