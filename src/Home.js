@@ -53,7 +53,7 @@ const items = [
   {
     href: '/4',
     icon: LibraryBooksIcon,
-    title: 'Resources'
+    title: 'Resource'
   },  
 ];
 
