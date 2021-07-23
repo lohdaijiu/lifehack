@@ -36,7 +36,7 @@ const user = {
 
 const items = [
   {
-    href: '/Home',
+    href: '/',
     icon: HomeIcon,
     title: 'Home'
   },
