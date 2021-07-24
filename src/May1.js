@@ -1,11 +1,7 @@
 import Todo from "./May";
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Typography from './Typography';
-import Button from '@material-ui/core/Button';
 import AppBar from './Home'
 
 const styles = (theme) => ({

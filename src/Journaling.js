@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Hidden from '@material-ui/core/Hidden';
 import Container from '@material-ui/core/Container';
 import Typography from './Typography';
 import { TextField, Button } from '@material-ui/core';
 import AppBar from "./Home";
-import { auto } from '@popperjs/core';
 import { yellow } from '@material-ui/core/colors';
 
 const styles = (theme) => ({
@@ -25,8 +23,6 @@ const styles = (theme) => ({
     justifyContent: 'center',
     backgroundColor: yellow[200],
     padding: theme.spacing(8, 3),
-    marginLeft: auto,
-    marginRight: auto,
   },
   cardContent: {
     maxWidth: 400,
@@ -49,7 +45,7 @@ const styles = (theme) => ({
     right: 0,
     bottom: 0,
     width: '100%',
-    background: 'url(/static/onepirate/productCTAImageDots.png)',
+    background: 'url(/static/onepirate/JournalImageDots.png)',
   },
   image: {
     position: 'absolute',
@@ -62,17 +58,11 @@ const styles = (theme) => ({
   },
 });
 
-function ProductCTA(props) {
+function Journal(props) {
   const { classes } = props;
-  const [open, setOpen] = React.useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
   };
 
   return (
@@ -100,8 +90,8 @@ function ProductCTA(props) {
   );
 }
 
-ProductCTA.propTypes = {
+Journal.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductCTA);
+export default withStyles(styles)(Journal);

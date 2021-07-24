@@ -1,33 +1,19 @@
-import { useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
-  Button,
   Divider,
   Drawer,
   Hidden,
   List,
   Typography
 } from '@material-ui/core';
-import {
-  AlertCircle as AlertCircleIcon,
-  BarChart as BarChartIcon,
-  Lock as LockIcon,
-  Settings as SettingsIcon,
-  ShoppingBag as ShoppingBagIcon,
-  User as UserIcon,
-  UserPlus as UserPlusIcon,
-  Users as UsersIcon
-} from 'react-feather';
 import HomeIcon from '@material-ui/icons/Home';
 import GroupIcon from '@material-ui/icons/Group';
 import CreateIcon from '@material-ui/icons/Create';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import NavItem from './1';
 import IU from "./photo.jpg"
-import asdf from "./3"
 
 const user = {
   avatar: IU,
@@ -58,14 +44,6 @@ const items = [
 ];
 
 const DashboardSidebar = ({ onMobileClose, openMobile }) => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (openMobile && onMobileClose) {
-      onMobileClose();
-    }
-  }, [location.pathname]);
-
   const content = (
     <Box
       sx={{
@@ -158,16 +136,6 @@ const DashboardSidebar = ({ onMobileClose, openMobile }) => {
       <asdf/>
     </>
   );
-};
-
-DashboardSidebar.propTypes = {
-  onMobileClose: PropTypes.func,
-  openMobile: PropTypes.bool
-};
-
-DashboardSidebar.defaultProps = {
-  onMobileClose: () => { },
-  openMobile: false
 };
 
 export default DashboardSidebar;

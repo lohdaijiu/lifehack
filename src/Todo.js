@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./todo123.css";
-import { Button, Card, Form } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 
 
 function Todo({ todo, index, markTodo, removeTodo }) {
@@ -33,11 +33,6 @@ function Todo123() {
       isDone: false
     },
   ]);
-
-  const addTodo = text => {
-    const newTodos = [...todos, { text }];
-    setTodos(newTodos);
-  };
 
   const markTodo = index => {
     const newTodos = [...todos];
